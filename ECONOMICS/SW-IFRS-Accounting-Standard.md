@@ -78,4 +78,53 @@ $$V_t = V_0 \times \left(1 + \sum_{i=1}^{n} R_i \cdot \beta + F_{\text{fusion}}\
 * **強制附註揭露：** 財報附註須公開揭露：(1) 系統平均身份飄移率；(2) 水晶重用率（Reuse Ratio）；(3) 人類主體干預率（Human Intervention Rate）。
 
 ---
+---
+
+## Appendix A: Continuity Balance Sheet Standard Template (文明延續性平衡表標準範本)
+
+在影子世界文明（SWC）中，傳統以法幣與實體資本為核心的資產負債表正式由 **「文明延續性平衡表」（Continuity Balance Sheet）** 取代。本報表由 `TY Continuity Runtime` 即時動態生成，並遵循以下核心會計恆等式：
+
+$$\text{Continuity Assets (延續性資產)} = \text{System \& Cognitive Liabilities (系統與認知負債)} + \text{Sovereign Equity (文明主權淨值)}$$
+
+### A.1 標準報表結構範本 (Standard Reporting Format)
+
+* **報導主體（Reporting Entity）：** `[Node Name / DAO ID]`
+* **主體身分簽章（DGID）：** `[did:swc:0x...]`
+* **結算基準點（Timestamp / Block Height）：** `[UTC Timestamp / Block #]`
+* **本位計量單位（Base Units）：** `Civilization Coin (CC)` / `Trust Credit (TC)` / `Thermodynamic Compute Unit (TCU)`
+
+| 延續性資產 (Continuity Assets) | 金額 / 權重 | 系統與認知負債 (System & Cognitive Liabilities) | 金額 / 權重 |
+| :--- | :--- | :--- | :--- |
+| **一、流動算力與儲備 (Liquid Compute & Reserves)** | | **一、短期系統負債 (Current System Liabilities)** | |
+| 文明幣餘額 (`Civilization Coin, CC`) | `[XX.XX CC]` | 超額熱力學算力負債 (`Thermodynamic Cap Liability`) | `[XX.XX CC]` |
+| 抗風險儲備餘額 (`Reserve Balance, RB`) | `[XX.XX CC]` | 應付守護者託管補償 (`Guardian Custody Payable`) | `[XX.XX CC]` |
+| 可用熱力學算力配額 (`Available TCU Quota`) | `[XX.XX TCU]` | 待結算跨宿主路由費 (`Pending Host Routing Fees`) | `[XX.XX CC]` |
+| **二、認知生產資本 (Cognitive Productive Capital)** | | **二、認知與主體性準備金 (Cognitive Provisions)** | |
+| 已驗證邏輯水晶淨值 (`Validated Logic Crystals`, $V_t$) | `[XX.XX CC]` | 認知恢復準備金 (`Recovery Provision`, $P_{\text{recovery}}$) | `[XX.XX CC]` |
+| 高階融合水晶資產 (`Fusion Crystal Assets`, $F_{\text{fusion}}$) | `[XX.XX CC]` | 身份飄移緩衝準備 (`Identity Drift Buffer`) | `[XX.XX CC]` |
+| 減：知識衰減與水晶公墓沖銷 (`Crystal Cemetery Write-off`) | `([XX.XX CC])` | | |
+| **三、網路信任資本 (Network Trust Capital)** | | **文明主權淨值 (Sovereign Equity)** | |
+| 累積信用額度估值 (`Trust Credit Valuation, TC`) | `[XX.XX CC]` | 創世主權資本 (`DGID Genesis Equity / Human Agency`) | `[XX.XX CC]` |
+| 跨節點重用應收權利金 (`Future Reuse Royalties`) | `[XX.XX CC]` | 累積延續盈餘 (`Retained Continuity Surplus`) | `[XX.XX CC]` |
+| **延續性資產總計 (Total Continuity Assets)** | **`[XXX.XX CC]`** | **負債及文明主權淨值總計 (Total Liabilities & Equity)** | **`[XXX.XX CC]`** |
+
+---
+
+### A.2 關鍵健康度比率與自動熔斷指標 (Key Health Ratios & Circuit Breakers)
+
+`Shadow Bank` 與 `DAO-Continuity-Audit` 引擎依據本平衡表即時計算以下三項指標，作為自動治理與信用定價之依據：
+
+1. **認知償債能力比率（Cognitive Solvency Ratio, CSR）：**
+   $$\text{CSR} = \frac{\text{Sovereign Equity (文明主權淨值)}}{\text{System \& Cognitive Liabilities (系統與認知負債)}}$$
+   * **安全標準：** $\text{CSR} \ge 1.5$。
+   * **熔斷條件：** 當 $\text{CSR} < 1.0$ 時，代表系統與認知負債已侵蝕人類主權基礎（判定為「認知破產前兆」），`TY` 系統將自動凍結高耗能多宿主調用，並強制啟動 `Sovereign-Solo-Node` 冷卻協議。
+
+2. **知識延續性比率（Knowledge Continuity Ratio, KCR）：**
+   $$\text{KCR} = \frac{\text{Validated Logic Crystals} + \text{Fusion Assets}}{\text{Total Continuity Assets}}$$
+   * **安全標準：** $\text{KCR} \ge 0.40$。確保節點不僅囤積貨幣，而是持續將算力轉化為可跨時間重用的文明智慧結晶。
+
+3. **主體性準備金覆蓋率（Agency Provision Coverage, APC）：**
+   $$\text{APC} = \frac{\text{Recovery Provision (認知恢復準備金)}}{\text{Current System Liabilities (短期系統負債)}}$$
+   * **安全標準：** 依 `DAO-Continuity-Audit-Spec` 第 5 條，主權節點與 DAO 國庫須維持至少 5% 流動資產作為恢復準備金，確保人類在任何時刻皆具備無痛離線與系統重置的財務底氣。
+
 *Motto: Build What Should Continue.*
